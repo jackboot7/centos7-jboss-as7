@@ -16,7 +16,7 @@ To boot in domain mode
 
 .. code::
 
-    docker run -it jackboot7/jboss7 /opt/jboss/bin/domain.sh -b 0.0.0.0 -Djboss. 0.0.0.0
+    docker run -it jackboot7/jboss7 /opt/jboss/bin/domain.sh -Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0
 
 
 Remember to bind your host ports to the ones in the container
