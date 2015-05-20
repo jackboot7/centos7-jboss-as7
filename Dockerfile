@@ -42,8 +42,9 @@ RUN cd /opt && \
 # Set the JBOSS_HOME env variable
 ENV JBOSS_HOME /opt/jboss
 
-# Expose the ports for JBoss AS7
+# Expose the ports for JBoss AS7 and change the user
 EXPOSE 8080 9990 
+USER jboss
 
 # Run JBoss AS7 on boot
-CMD ["/opt/jboss/bin/standalone.sh", "-Djboss.bind.address", "0.0.0.0", "-Djboss.bind.adress.management", "0.0.0.0"]
+CMD ["/opt/jboss/bin/standalone.sh", "-Djboss.bind.address=0.0.0.0", "-Djboss.bind.adress.management=0.0.0.0"]
