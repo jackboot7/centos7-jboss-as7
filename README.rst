@@ -50,5 +50,5 @@ Application deployment
 4. Run the container with `docker run -it jboss-app`. Application will be deployed on the container boot.
 
 
-.. _Docker hub registry: 
+.. _Docker hub registry: https://registry.hub.docker.com/u/jackboot7/jboss7/ 
 .. _centos/wildfly: https://github.com/CentOS/CentOS-Dockerfiles/blob/master/wildfly/centos7/Dockerfile
